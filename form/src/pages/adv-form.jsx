@@ -99,7 +99,7 @@ export default function Advform() {
                 }}
             >
                 <Background3 />
-                <div className="w-[60%] pl-20 pt-8 pb-4 overflow-y-scroll ">
+                <div className="w-[60%] pl-40 pt-20 pb-4 overflow-y-scroll ">
                     {
                         submit ? (
                             <div className="pl-20">
