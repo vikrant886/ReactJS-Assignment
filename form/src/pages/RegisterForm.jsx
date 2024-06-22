@@ -107,9 +107,9 @@ export default function Register() {
                             </button>
                         </div>
                     ) : (
-                        <div className={`w-[35%] ${show ? "opacity-1" : "opacity-0"} rounded-xl z-50 ${gueststatus === "true" ? "h-[75%]" : "h-[70%]"} transition-all duration-400 bg-[#000000] bg-opacity-50 flex items-center flex-col gap-12 pt-12`}>
+                        <div className={`w-[35%] ${show ? "opacity-1" : "opacity-0"} rounded-xl z-50 ${gueststatus === "true" ? "h-[80%]" : "h-[75%]"} transition-all duration-400 bg-[#000000] bg-opacity-50 flex items-center flex-col gap-8 pt-4`}>
                             <p className="flex justify-center text-4xl text-[#5AFE73]">REGISTER</p>
-                            <div className="w-[90%] flex flex-col gap-8">
+                            <div className="w-[90%] flex flex-col gap-6">
                                 <div className="w-full h-full flex flex-row items-center justify-between gap-2">
                                     <input
                                         type="text"

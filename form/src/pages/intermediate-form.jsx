@@ -175,7 +175,7 @@ export default function IntermediateForm() {
                         <div className="flex flex-row w-full">
                             <div className="w-[60%] ">
                                 <div className="flex flex-col gap-6 pb-12" >
-                                    <div className="h-24">
+                                    <div className="h-20">
                                         <label>Full Name <span className="text-red-500">*</span></label><br />
                                         <input placeholder="What is your name ?"
                                             onBlur={() => { validate("name") }}
@@ -183,7 +183,7 @@ export default function IntermediateForm() {
                                             type="text" className="rounded-lg p-3 text-semibold text-black w-[80%] outline-none border" />
                                         {errors.name && (<div className="text-red-500">*{errors.name}</div>)}
                                     </div>
-                                    <div className="h-24">
+                                    <div className="h-20">
                                         <label>Emai Id <span className="text-red-500">*</span></label><br />
                                         <input onChange={(e) => setMail(e.target.value)}
                                             onBlur={() => { validate("mail") }}
@@ -191,7 +191,7 @@ export default function IntermediateForm() {
                                             type="mail" className="rounded-lg p-3 text-semibold text-black w-[80%] outline-none border" />
                                         {errors.mail && (<div className="text-red-500">*{errors.mail}</div>)}
                                     </div>
-                                    <div className="h-24">
+                                    <div className="h-20">
                                         <label>Phone Number <span className="text-red-500">*</span></label><br />
                                         <input
                                             onChange={(e) => setMobile(e.target.value)}
@@ -201,11 +201,11 @@ export default function IntermediateForm() {
                                         {errors.number && (<div className="text-red-500">*{errors.number}</div>)}
 
                                     </div>
-                                    <div className="h-24">
+                                    <div className="h-20">
                                         <label>Position <span className="text-red-500">*</span></label><br />
                                         <select onBlur={() => validate("pos")}
                                             onChange={(e) => setPosition(e.target.value)}
-                                            value={position} className="rounded-lg  p-4 text-semibold text-black w-[80%] outline-none border" id="">
+                                            value={position} className="rounded-lg  p-3 text-semibold text-black w-[80%] outline-none border" id="">
                                             <option disabled hidden value="none">Choose your Position</option>
                                             <option value="developer">Developer</option>
                                             <option value="designer">Designer</option>
@@ -277,9 +277,9 @@ export default function IntermediateForm() {
                                         transition={{ duration: 0.3 }}
                                     >
                                         <label>Skills <span className="text-red-500">*</span></label><br />
-                                        <div className="grid grid-cols-6 gap-2 w-[100%]">
+                                        <div className="grid h-36 grid-cols-6 gap-2 w-[100%]">
                                             {skills.map((skill, index) => (
-                                                <div onClick={() => toggleSkill(index)} className={`bg-[#172D13] p-3 ${selectedSkills.has(index) ? "border-2 border-blue-600" : ""} rounded-lg text-center ${index == 0 || index == (skills.length - 1) ? "col-span-2" : "col-span-1"} overflow-hidden`} key={index}>{skill}</div>
+                                                <div onClick={() => toggleSkill(index)} className={`bg-[#172D13] p-2 ${selectedSkills.has(index) ? "border-2 border-blue-600" : ""} rounded-lg text-center ${index == 0 || index == (skills.length - 1) ? "col-span-2" : "col-span-1"} overflow-hidden`} key={index}>{skill}</div>
                                             ))}
 
                                         </div>
