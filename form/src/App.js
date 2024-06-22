@@ -3,12 +3,14 @@ import './App.css';
 import { BrowserRouter , Route, Routes } from 'react-router-dom';
 import Register from './pages/RegisterForm';
 import IntermediateForm from './pages/intermediate-form';
+import Advform from './pages/adv-form';
 function App() {
   return (
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Register/>}  />
       <Route path='/inter' element={<IntermediateForm/>}/>
+      <Route path='/advanced' element={<Advform/>}/>
     </Routes>
     </BrowserRouter>
   );
